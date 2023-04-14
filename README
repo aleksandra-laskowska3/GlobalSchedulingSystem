@@ -1,0 +1,23 @@
+QAM2 Task 1
+Purpose of Application
+-Scheduling System application which uses a GUI to schedule appointments with customers and runs reports.
+
+Author: Aleksandra Laskowska
+Contact Information: alaskows@wgu.edu
+Application Version: 1.0
+Date: 10/05/2022
+
+IDE and Java Information:
+IntelliJ IDEA Community Edition 2021.1.3x64
+Java SE 17.0.1
+JavaFX-SDK-17.0.1
+mysql connector: mysql-connector-java-8.0.25
+
+How to Run Program:
+Import zipped application into IntelliJ, then open and run application. The correct login credentials are username:test password:test or
+username: admin password: admin. Database Connection String: username:sqlUser port:3306 password:Passw0rd! database name: client_schedule.
+
+Third Report:
+Tableview is populated with appointments that are associated with the customer that is selected.
+
+

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:id="customerRecordsForm" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="685.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.customersController">
+   <children>
+      <TextField disable="true" editable="false" layoutY="-2.0" opacity="0.67" prefHeight="29.0" prefWidth="685.0" style="-fx-background-color: #ADD8E6; -fx-border-color: #7393B3;" />
+      <Label layoutX="286.0" layoutY="4.0" text="Customer Records">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <TableView fx:id="customerTableView" layoutY="27.0" prefHeight="257.0" prefWidth="685.0">
+        <columns>
+          <TableColumn fx:id="idColumn" prefWidth="77.0" text="Customer ID" />
+          <TableColumn fx:id="nameColumn" prefWidth="110.0" text="Name" />
+            <TableColumn fx:id="addressColumn" prefWidth="148.0" text="Address" />
+            <TableColumn fx:id="postalCodeColumn" prefWidth="82.0" text="Postal Code" />
+            <TableColumn fx:id="firstLevelDivisionColumn" prefWidth="106.0" text="1st Level Division" />
+            <TableColumn fx:id="countryColumn" prefWidth="56.0" text="Country" />
+            <TableColumn fx:id="phoneNumerColumn" prefWidth="105.0" text="Phone Number" />
+        </columns>
+      </TableView>
+      <Button fx:id="addButton" layoutX="142.0" layoutY="293.0" mnemonicParsing="false" onAction="#addButtonHandler" style="-fx-background-color: #B7CFDE;" text="Add" />
+      <Button fx:id="updateButton" layoutX="195.0" layoutY="293.0" mnemonicParsing="false" onAction="#updateButtonHandler" style="-fx-background-color: #B7CFDE;" text="Update" />
+      <Button fx:id="deleteButton" layoutX="263.0" layoutY="293.0" mnemonicParsing="false" onAction="#deleteButtonHandler" style="-fx-background-color: #B7CFDE;" text="Delete" />
+      <Button fx:id="mainMenuButton" layoutX="417.0" layoutY="350.0" mnemonicParsing="false" onAction="#mainMenuButtonHandler" text="Main Menu" />
+      <Button fx:id="customerSignOutButton" layoutX="516.0" layoutY="350.0" mnemonicParsing="false" onAction="#customerSignOutButtonHandler" text="Sign Out" />
+   </children>
+</AnchorPane>
